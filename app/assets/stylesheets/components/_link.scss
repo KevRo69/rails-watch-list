@@ -1,8 +1,11 @@
 .link {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 32px;
-  background-color: $light-gray;
-  border: 1px solid, black;
+  h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  &:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))
+  }
 }

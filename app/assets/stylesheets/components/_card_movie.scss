@@ -1,8 +1,27 @@
 .card-movie {
-  width: 500px;
+  width: 400px;
+  height: 600px;
   padding: 16px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: white;
   img{
     width: 200px;
+  }
+}
+
+.cards-movies li{
+  p {
+    opacity: 0;
+    transition: 1s ease;
+  }
+}
+
+.cards-movies li:hover{
+  p{
+    opacity: 1;
   }
 }

@@ -1,3 +1,23 @@
 ul {
   list-style-type: none;
 }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+.cards-movies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card-list {
+  width: 300px;
+  height: 200px;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: white;
+}

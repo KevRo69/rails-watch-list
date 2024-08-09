@@ -3,11 +3,12 @@
   <%= link_to "Add a list", new_list_path, class: "btn btn-primary m-3"%>
 </div>
 
-<ul>
+<ul class="cards-movies">
   <% @bookmarks.each do |bookmark| %>
     <li>
-      <div class="card-movie d-flex flex-column m-3">
-        <div class="d-flex flex-row align-items-center justify-content-between">
+      <div class="card-movie d-flex flex-column m-3 align-items-center justify-content-between"
+          style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=bookmark.movie.poster_url%>)">
+        <div class="d-flex flex-row align-items-top justify-content-between">
           <div>
             <h2><%=bookmark.movie.title%></h2>
             <p><%=bookmark.movie.overview%></p>
@@ -19,9 +20,6 @@
               class: "btn btn-danger"
             %>
           </div>
-        </div>
-        <div class="img-movie">
-          <img src=<%=bookmark.movie.poster_url%> alt=<%="Poster #{bookmark.movie.title}"%>>
         </div>
         <div>
           <p><%= bookmark.comment%></p>
